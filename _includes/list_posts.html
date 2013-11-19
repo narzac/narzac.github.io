@@ -1,0 +1,35 @@
+<div id="blog">
+  <div class="container ps-stretch" >
+    <div class="ps-page">
+      <h1 class="ps-heading">
+	{% if page.language == 'tr' %}
+	Güncel Blog Yazıları
+	{% elsif page.language == 'en' %}
+	Recent Blog Posts
+	{% endif %}
+      </h1>
+      <hr class="ps-hr-white">
+      <ul class="list-unstyled">
+	{% for post in include.posts %}
+	<li class="ps-post-pre">
+	  <h1 class="col-lg-12">
+	    <a  href="{{ post.url }}">{{ post.title }}</a>
+	  </h1>
+	  {% include post-meta.html caller=post translation=post.translation %}
+	  <div class="clearfix"></div>
+	  <hr>
+	  <div class="ps-summary">{{ post.content |  truncatewords: 80 }}
+	    <span class="badge"> <a href="{{post.url}}">
+		{% if post.language == 'tr' %}
+		Devamını Oku
+		{% elsif post.language == 'en' %}
+		Continue Reading
+		{% endif %}
+	    </a> </span>
+	  </div>
+	</li>
+	{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

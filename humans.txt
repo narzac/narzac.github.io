@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ahmet Yeşil -- Designer & Developer -- @narzac
+
+# THANKS
+
+    Thanks to all the awesome people that I use the creatings of.
+
+# TECHNOLOGY COLOPHON
+
+    github, HTML5, CSS3, Normalize.css, jQuery, Modernizr, html5shiv, respond.js, Twitter Bootstrap, Jekyll, liquid, yaml, angularjs, atom feed, sitemap.xml, 

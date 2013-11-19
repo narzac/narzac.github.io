@@ -1,0 +1,25 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>{{site.my.name}}'in Bloğu</title>
+ <link href="{{site.my.website}}/feed/atom_tr.xml" rel="self"/>
+ <link href="{{site.my.website}}" />
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{site.my.website}}_en</id>
+ <author>
+   <name>{{site.my.name}}</name>
+   <email>{{site.my.email}}</email>
+ </author>
+ <icon>http://narzac.me/assets/images/favicon.ico</icon>
+ {% for post in site.categories.tr %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{site.my.website}}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{site.my.website}}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+</feed>

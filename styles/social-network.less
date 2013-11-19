@@ -1,0 +1,279 @@
+.ps-social {
+    margin: 30px auto 10px auto;
+    position: relative;
+    width: 270px;
+    height:30px;
+    &>li {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	padding-top: 3px;
+    }
+}
+
+.ps-social-fb {
+    top:0;
+    left: 0;
+}
+
+.ps-social-twitter {
+    top:0;
+    left: 100px;
+}
+
+.ps-social-google {
+    top:0;
+    left: 200px;
+}
+
+.ps-social-networks {
+  text-align: center;
+
+}
+
+[class*="ps-network-"] {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  line-height: 50px;
+  font-family: Entypo;
+  font-size: 24px;
+  text-align: center;
+  color: #bbb;
+  border-radius: 50%;
+  background: #ddd;
+  overflow: hidden;
+  transition: color .3s;
+}
+
+[class*="ps-network-"]:hover {
+  cursor: pointer;
+}
+
+[class*="ps-network-"] [class*="fa-"],
+[class*="ps-network-"] [class*="zocial-"] {
+    color: @colder-green;
+}
+
+[class*="ps-network-"]:hover {
+    background-color: rgb(245,245,245);
+    text-shadow: none;
+}
+
+.ps-network-facebook:hover {
+    .fa-facebook {
+	color: #3b5998 ;
+    }
+}
+
+.ps-network-twitter:hover {
+    .fa-twitter {
+	color: #00aced ;
+    }
+}
+
+.ps-network-google-plus:hover {
+    .fa-google-plus {
+	color: #C63D2D;
+    }
+}
+
+.ps-network-gmail:hover {
+    .fa-envelope {
+	color: #dd4b39 ;
+    }
+}
+
+.ps-network-linkedin:hover {
+    .fa-linkedin {
+	color: #4875B4;
+    }
+}
+
+.ps-network-foursquare:hover {
+    .fa-foursquare {
+	color:#0072b1;
+    }
+}
+
+.ps-network-youtube:hover {
+    .fa-youtube {
+	color:#FF3333 ;
+    }
+}
+
+.ps-network-github:hover {
+    .fa-github {
+	color: rgb(51, 51, 51) ;
+    }
+}
+
+.ps-network-stackexchange:hover {
+    .fa-stack-exchange {
+	color: rgb(255, 102, 0) ;
+    }
+}
+
+.ps-network-bitbucket:hover {
+    .fa-bitbucket {
+	color: #205081;
+    }
+}
+
+.ps-network-linux:hover {
+    .fa-linux {
+	color: rgb(51, 51, 51) ;
+    }
+}
+
+.ps-network-lastfm:hover {
+    .zocial-lastfm {
+	color:#e31b23 ;
+    }
+}
+
+.ps-network-disqus:hover {
+    .zocial-disqus {
+	color: rgb(48, 123, 186);
+    }
+}
+
+.ps-network-reddit:hover {
+    background-color: #CEE3F8;
+    .zocial-reddit {
+	color:rgb(51, 51, 51) ;
+    }
+}
+
+.icon-delicious {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    background-image: url("/assets/images/delicious-24px.png");
+    width: 24px;
+    height: 24px;
+    -webkit-filter: hue-rotate(213deg);
+}
+
+.ps-network-delicious:hover {
+    .icon-delicious {
+    -webkit-filter: hue-rotate(0deg);
+    }
+}
+.ps-network-hn {
+    font-weight: 900;
+}
+.icon-hn {
+    color: @colder-green;
+}
+.ps-network-hn:hover {
+    .icon-hn {
+	color: rgb(255, 102, 0);
+    }
+}
+
+.ps-avatar {
+    margin: 20px auto 40px auto;
+    display: block;
+    border: 2px solid #ddd;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+    .ps-avatar {
+	box-shadow:
+	rgb(239, 239, 239) 1px 1px,
+	rgb(239, 239, 239) 2px 1px,
+	rgb(240, 240, 240) 3px 1px,
+	rgb(240, 240, 240) 4px 1px,
+	rgb(240, 240, 240) 5px 1px,
+	rgb(241, 241, 241) 6px 1px,
+	rgb(241, 241, 241) 7px 1px,
+	rgb(241, 241, 241) 8px 1px,
+	rgb(242, 242, 242) 9px 1px,
+	rgb(242, 242, 242) 10px 2px,
+	rgb(243, 243, 243) 11px 2px,
+	rgb(243, 243, 243) 12px 2px,
+	rgb(243, 243, 243) 13px 2px,
+	rgb(244, 244, 244) 14px 2px,
+	rgb(244, 244, 244) 15px 2px,
+	rgb(244, 244, 244) 16px 2px,
+	rgb(245, 245, 245) 17px 2px,
+	rgb(245, 245, 245) 18px 2px,
+	rgb(245, 245, 245) 19px 2px,
+	rgb(246, 246, 246) 20px 3px,
+	rgb(246, 246, 246) 21px 3px,
+	rgb(247, 247, 247) 22px 3px,
+	rgb(247, 247, 247) 23px 3px,
+	rgb(247, 247, 247) 24px 3px,
+	rgb(248, 248, 248) 25px 3px,
+	rgb(248, 248, 248) 26px 3px,
+	rgb(248, 248, 248) 27px 3px,
+	rgb(249, 249, 249) 28px 3px,
+	rgb(249, 249, 249) 29px 3px,
+	rgb(250, 250, 250) 30px 3px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+    [class*="ps-network-"] {
+	box-shadow:
+	rgb(239, 239, 239) 1px 1px,
+	rgb(239, 239, 239) 2px 1px,
+	rgb(240, 240, 240) 3px 1px,
+	rgb(240, 240, 240) 4px 1px,
+	rgb(240, 240, 240) 5px 1px,
+	rgb(241, 241, 241) 6px 1px,
+	rgb(241, 241, 241) 7px 1px,
+	rgb(241, 241, 241) 8px 1px,
+	rgb(242, 242, 242) 9px 1px,
+	rgb(242, 242, 242) 10px 2px,
+	rgb(243, 243, 243) 11px 2px,
+	rgb(243, 243, 243) 12px 2px,
+	rgb(243, 243, 243) 13px 2px,
+	rgb(244, 244, 244) 14px 2px,
+	rgb(244, 244, 244) 15px 2px,
+	rgb(244, 244, 244) 16px 2px,
+	rgb(245, 245, 245) 17px 2px,
+	rgb(245, 245, 245) 18px 2px,
+	rgb(245, 245, 245) 19px 2px,
+	rgb(246, 246, 246) 20px 3px,
+	rgb(246, 246, 246) 21px 3px,
+	rgb(247, 247, 247) 22px 3px,
+	rgb(247, 247, 247) 23px 3px,
+	rgb(247, 247, 247) 24px 3px,
+	rgb(248, 248, 248) 25px 3px,
+	rgb(248, 248, 248) 26px 3px,
+	rgb(248, 248, 248) 27px 3px,
+	rgb(249, 249, 249) 28px 3px,
+	rgb(249, 249, 249) 29px 3px,
+	rgb(250, 250, 250) 30px 3px;
+	text-shadow:
+	rgb(210, 210, 210) 1px 1px,
+	rgb(211, 211, 211) 2px 1px,
+	rgb(211, 211, 211) 3px 1px,
+	rgb(212, 212, 212) 4px 1px,
+	rgb(212, 212, 212) 5px 1px,
+	rgb(213, 213, 213) 6px 1px,
+	rgb(214, 214, 214) 7px 1px,
+	rgb(214, 214, 214) 8px  2px,
+	rgb(215, 215, 215) 9px  2px,
+	rgb(216, 216, 216) 10px 2px,
+	rgb(216, 216, 216) 11px 2px,
+	rgb(217, 217, 217) 12px 2px,
+	rgb(217, 217, 217) 13px 2px,
+	rgb(218, 218, 218) 14px 2px,
+	rgb(219, 219, 219) 15px 3px,
+	rgb(219, 219, 219) 16px 3px,
+	rgb(220, 220, 220) 17px 3px,
+	rgb(220, 220, 220) 18px 3px,
+	rgb(221, 221, 221) 19px 3px,
+	rgb(222, 222, 222) 20px 3px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }

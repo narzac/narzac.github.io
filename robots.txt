@@ -1,0 +1,4 @@
+# robotstxt.org/
+User-agent: *
+Disallow: /assets/*
+Sitemap: http://narzac.me/sitemap.xml

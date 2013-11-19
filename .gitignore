@@ -1,0 +1,15 @@
+*~
+#*
+_site/
+_site-devel/
+*.DS_Store*
+node_modules/
+bower_modules
+!.bowerrc
+!.editorconfig
+!.jshintrc
+assets/fonts/
+scripts/angular.js
+scripts/jquery.js
+scripts/ui-bootstrap-tpls.js
+tmp/

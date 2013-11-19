@@ -1,0 +1,6 @@
+# Jekyll _config-devel.yml overwrites
+destination: ./_site-devel
+exclude: [node_modules, bower_modules ]
+port: 4001
+url: http://localhost:4001
+isDevelopmentBuild: true

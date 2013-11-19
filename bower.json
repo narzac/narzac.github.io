@@ -1,0 +1,27 @@
+{
+    "name": "narzac.me",
+    "version": "0.0.0",
+    "authors": [
+	"narzac <ahmet@freeconsole.org>"
+    ],
+    "description": "The code that powers narzac.me",
+    "license": "private",
+    "homepage": "http://narzac.me",
+    "private": true,
+    "ignore": [
+	"**/.*",
+	"node_modules",
+	"bower_modules",
+	"test",
+	"tests"
+    ],
+    "dependencies": {
+	"bootstrap": " >= 3.0.2",
+	"jquery": " >= 2.0.3",
+	"angular": " >= 1.2.1",
+	"angular-bootstrap": " >= 0.6.0",
+	"font-awesome": " >= 4.0.3"
+    },
+    "devDependencies": {
+    }
+}

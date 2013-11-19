@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div id="post">
+  <div class="ps-stretch container">
+    <div class="ps-page">
+      {% if page.language == 'en' and  page.translation | size != 0  %}
+      <p class="pull-right ps-translation"> Bu gönderiyi
+	<a href="{{ page.translation }}" alt="Bu gönderinin  türkçesi de mevcuttur.">Türkçe</a> okuyabilirsiniz.
+      </p>
+      {% elsif page.language == 'tr' and  page.translation | size != 0  %}
+      <p class="pull-right ps-translation"> See this post in
+	<a href="{{ page.translation }}" alt="English version of this post is also available.">English</a>.
+      </p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      {% include post-meta.html caller=page translation=page.translation %}
+      <div class="clearfix"></div>
+      <hr class="ps-hr-white">
+      <div class="ps-post-content">
+	{{ content }}
+      </div>
+      <ul class="list-inline ps-social">
+	<li class="ps-social-fb">
+	  <div class="fb-like" data-href="{{ site.my.website }}{{ page.url }}" data-width="92" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+	</li>
+	<li class="ps-social-twitter">
+	  <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.my.website }}{{ page.url }}"
+	     data-count="horizontal" data-text="{{ page.title }}" data-via="narzac" data-related="narzac" {% if page.language == 'tr' %} data-lang="tr" {% endif %} ></a>
+	</li>
+	<li  class="ps-social-google">
+	  <div class="g-plusone" data-size="medium" data-href="{{ site.my.website }}{{ page.url }}"></div>
+	</li>
+      </ul>
+    </div> <!-- page -->
+    <div class="ps-page">
+      <div id="disqus_thread"></div>
+    </div>
+  </div> <!-- container -->
+</div> <!-- post -->
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  {% if page.language == 'tr' %}
+  js.src ="//connect.facebook.net/tr_TR/all.js#xfbml=1";
+  {% else %}
+  js.src ="//connect.facebook.net/en_US/all.js#xfbml=1";
+  {% endif %}
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);
+  js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+<script type="text/javascript">
+  {% if page.language == 'tr' %}
+  window.___gcfg = {lang: 'tr'};
+  {% endif %}
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script type="text/javascript">
+  {% if page.language == 'tr' %}
+  var disqus_config = function () {
+     this.language = "tr";
+  };
+  {% endif %}
+  var disqus_shortname = '{{ site.my.disqus_shortname }}';
+  var disqus_identifier =  '{{ page.unique_id }}';
+  var disqus_title = '{{ page.title }}';
+  var disqus_url = '{{ site.my.website }}{{ page.url }}';
+  (function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

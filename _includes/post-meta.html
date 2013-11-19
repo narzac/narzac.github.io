@@ -1,0 +1,59 @@
+<div class="ps-meta row">
+  <div class="ps-time col-sm-6">
+    <p>
+      {% if include.caller.language == 'en' %}
+	  <span class="ps-bold"> Publish Date:</span> {{ include.caller.date | date: "%B %d, %Y -  %H:%M"  }}
+      {% elsif include.caller.language == 'tr' %}
+	  {% capture month_value %}{{ include.caller.date | date: "%m"  }}{% endcapture %}
+	  <span class="ps-bold"> Yayın Tarihi: </span>
+	  {{ include.caller.date | date: "%d "  }}
+	  {{ site.locale.tr.months | map: month_value }}
+	  {{ include.caller.date | date: " %Y -  %H:%M"  }}
+      {% endif %}
+    </p>
+    <p>
+      <span class="ps-bold">
+	{% if include.caller.language == 'en' %}
+	    Reading Time:
+	{% elsif include.caller.language == 'tr' %}
+	    Okuma Süresi:
+	{% endif %}
+      </span>
+
+{% capture minute_part %}{{ include.caller.content | strip_html | number_of_words | divided_by:180 | strip_newlines }}{% endcapture %}
+{% capture second_part %}{{ include.caller.content | strip_html | number_of_words| modulo: 180 | divided_by: 3 | strip_newlines }}{% endcapture %}
+
+      {% unless minute_part == '0'  %}
+	  {% if include.caller.language == 'tr'  %}
+	      {{ minute_part }} dakika
+	  {% elsif minute_part == '1' and  include.caller.language == 'en'  %}
+	      {{ minute_part }} minute
+	  {% else %}
+	      {{ minute_part }} minutes
+	  {% endif %}
+      {% endunless %}
+      {% unless second_part == '0' or  second_part == '1' %}
+	  {% if include.caller.language == 'tr'  %}
+	      {{ second_part }} saniye
+	  {% elsif include.caller.language == 'en'  %}
+	      {{ second_part }} seconds
+	  {% endif %}
+      {% endunless %}
+
+    </p>
+  </div>
+  <div class="ps-tags col-sm-6">
+    <p>
+      <span class="ps-bold">
+	{% if include.caller.language == 'tr'  %}
+	    Tagler:
+	{% elsif include.caller.language == 'en'  %}
+	    Tags:
+	{% endif %}
+      </span>
+      {% for tag in include.caller.tags %}
+	  <span class="label">{{ tag }}</span>
+      {% endfor %}
+    </p>
+  </div>
+</div>
