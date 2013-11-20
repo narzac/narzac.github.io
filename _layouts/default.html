@@ -22,8 +22,8 @@
 	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 	<link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png">
 
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
 
 	{% if site.isDevelopmentBuild %}
 	<link rel="stylesheet" href="/tmp/bootstrap.css">
@@ -55,7 +55,7 @@
 	      <a href="http://www.google.com/chromeframe/?redirect=true">activate
 		Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
-	{% include header.html %}
+	{% include header.html caller=page %}
 	{{ content }}
 	{% include footer.html %}
 
