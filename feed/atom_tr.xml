@@ -4,15 +4,16 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  <title>{{site.my.name}}'in Bloğu</title>
- <link href="{{site.my.website}}/feed/atom_tr.xml" rel="self"/>
- <link href="{{site.my.website}}" />
+ <icon>{{site.my.website}}assets/images/favicon.ico</icon>
+ <link href="{{site.my.website}}/feed/atom_tr.xml" rel="self" type="application/atom+xml"/>
+ <link href="{{site.my.website}}" rel="alternate" type="text/html"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{site.my.website}}_en</id>
+ <id>{{site.my.website}}_tr</id>
  <author>
    <name>{{site.my.name}}</name>
    <email>{{site.my.email}}</email>
+   <uri>{{site.my.website}}</uri>
  </author>
- <icon>http://narzac.me/assets/images/favicon.ico</icon>
  {% for post in site.categories.tr %}
  <entry>
    <title>{{ post.title }}</title>
