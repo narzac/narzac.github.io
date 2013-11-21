@@ -2,13 +2,13 @@
   <div class="ps-time col-sm-6">
     <p>
       {% if include.caller.language == 'en' %}
-	  <span class="ps-bold"> Publish Date:</span> {{ include.caller.date | date: "%B %d, %Y -  %H:%M"  }}
+	  <span class="ps-bold"> Publish Date:</span> {{ include.caller.date | date: "%B %d, %Y"  }}
       {% elsif include.caller.language == 'tr' %}
 	  {% capture month_value %}{{ include.caller.date | date: "%m"  }}{% endcapture %}
 	  <span class="ps-bold"> Yayın Tarihi: </span>
 	  {{ include.caller.date | date: "%d "  }}
 	  {{ site.locale.tr.months | map: month_value }}
-	  {{ include.caller.date | date: " %Y -  %H:%M"  }}
+	  {{ include.caller.date | date: " %Y"  }}
       {% endif %}
     </p>
     <p>
