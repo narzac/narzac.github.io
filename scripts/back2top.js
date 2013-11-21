@@ -16,11 +16,8 @@
 	    }
 	});
 	backToTop.click (function (e) {
-	// TODO if not desktop, don't animate
 	    e.preventDefault ();
-	    $('body, html').animate({
-			scrollTop: 0
-	    }, 600);
+	    $('body, html').scrollTop(0);
 	});
     };
 
