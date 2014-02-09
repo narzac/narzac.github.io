@@ -2,7 +2,7 @@
   "name": "narzac.me",
   "version": "0.0.1",
   "private": true,
-  "author": "Ahmet Yeşil <ayesil@freeconsole.org> (http:://ayesil.org)",
+  "author": "Ahmet Yeşil <ayesil@freeconsole.org> (http://narzac.me)",
   "description": "Personal Web Site of Ahmet Yeşil",
   "dependencies": {},
   "devDependencies": {
