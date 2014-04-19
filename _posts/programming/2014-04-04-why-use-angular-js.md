@@ -11,11 +11,11 @@ current: ps-nav-post
 
 AngularJS is a well thought framework and have unique design desicions in its very core. In this post I will point out some aspects I find  worth noting. I will not get into the discussion of choosing one client side MVC framework over another, because AngularJS is more than that. It is a complete package, take it or leave it. If you think this is not what you are looking for or happy with your choices, feel free to not to continue.
 
-1. AngularJS promotes TDD(Test Driven Development). It is best practice to write your tests first then progressively and iteratively implement the code. The team develops and support Karma for unit tests and Protactor for end-to-end tests.
+1. AngularJS promotes Test Driven Development (TDD). It is best practice to write your tests first then progressively and iteratively implement the code. The team develops and support Karma for unit tests and Protactor for end-to-end tests.
 
-2. AngularJS promotes DDD(Data Driven Development). The data drives the project. Data can be bound, two way binding(as in, if sth. changes in the ui, the corresponding variable in the javascript scope changes and vice versa), even three way binding(for example additional to two way binding, javascript code is bound to a remote database).
+2. AngularJS promotes Data Driven Development (DDD). The data drives the project. Data can be bound, two way binding(as in, if sth. changes in the ui, the corresponding variable in the javascript scope changes and vice versa), even three way binding(for example additional to two way binding, javascript code is bound to a remote database).
 
-3. Being able to extend HTML with directives, so that we can have more readabe and symantic markup and reuse the components, most of the time this correspond to directives with isolated scope. Note that, directives with isolated(optional) scope can take its data from outside world, as if a function takes its parameters from the calling code.
+3. Being able to extend HTML with directives, so that we can have more readabe and semantic markup and reuse the components, most of the time this correspond to directives with isolated scope. Note that, directives with isolated(optional) scope can take its data from outside world, as if a function takes its parameters from the calling code.
 
 4. AngularJS discourages the DOM manipulation, using a declarative syntax and bindings in appropriate places is the way to go.
 
