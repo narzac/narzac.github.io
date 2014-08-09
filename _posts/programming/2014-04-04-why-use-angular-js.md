@@ -9,7 +9,7 @@ tags: AngularJS
 current: ps-nav-post
 ---
 
-AngularJS is a well thought framework and have unique design desicions in its very core. In this post I will point out some aspects I find  worth noting. I will not get into the discussion of choosing one client side MVC framework over another, because AngularJS is more than that. It is a complete package, take it or leave it. If you think this is not what you are looking for or happy with your choices, feel free to not to continue.
+AngularJS is a well thought framework and have unique design decisions in its very core. In this post I will point out some aspects I find  worth noting. I will not get into the discussion of choosing one client side MVC framework over another,  beware this is about AngularJS only.
 
 1. AngularJS promotes Test Driven Development (TDD). It is best practice to write your tests first then progressively and iteratively implement the code. The team develops and support Karma for unit tests and Protactor for end-to-end tests.
 
@@ -36,7 +36,7 @@ AngularJS is a well thought framework and have unique design desicions in its ve
 11. Good documentation, growing community. Google support so it is guaranteed there will be no money issue :)
 
 12. In addition to core, there are other optional additions if desired, such as animation, resource(for consuming RESTful APIs), sanitize,
-	 mock(for testing), route, touch( touch enabled devices), cookies.
+     mock(for testing), route, touch( touch enabled devices), cookies.
 
 13. Since almost all browsers support gzip, even IE 5.5+, it is unbelievable right :) Anyway, just to give you an idea the compressed with level 4, AngularJS is 40 KB, jQuery is 36 KB.
 
