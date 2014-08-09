@@ -20,8 +20,13 @@
 	{% endif %}
       </span>
 
-{% capture minute_part %}{{ include.caller.content | strip_html | number_of_words | divided_by:180 | strip_newlines }}{% endcapture %}
-{% capture second_part %}{{ include.caller.content | strip_html | number_of_words| modulo: 180 | divided_by: 3 | strip_newlines }}{% endcapture %}
+{% capture nr_words %}{{ include.caller.content | strip_html | number_of_words | strip_newlines }}{% endcapture %}
+{% capture nr_words_readable_under_minute %}{{ include.caller.content | strip_html | number_of_words | modulo:180 | strip_newlines }}{% endcapture %}
+{% capture nr_words_readable_under_second %}{{ nr_words_readable_under_minute | modulo: 3 | strip_newlines }}{% endcapture %}
+
+{% capture minute_part %}{{ nr_words | minus: nr_words_readable_under_minute | divided_by:180 | strip_newlines }}{% endcapture %}
+{% capture second_part %}{{ nr_words_readable_under_minute | minus: nr_words_readable_under_second | divided_by: 3 | strip_newlines }}{% endcapture %}
+
 
       {% unless minute_part == '0'  %}
 	  {% if include.caller.language == 'tr'  %}
