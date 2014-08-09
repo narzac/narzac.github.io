@@ -4,7 +4,7 @@ language: en
 categories: en blog programming
 unique_id: 1_en
 date: 2013-11-19 22:24
-title:  "Estimated Reading Time with Jekyll &amp; Liquid"
+title:  "Estimated reading time with Jekyll &amp; Liquid"
 tags: jekyll liquid
 ---
 
