@@ -42,10 +42,7 @@ module.exports = function(grunt) {
 		'scripts/*.js'
 	    ]
 	},
-	recess: {
-	    options: {
-		compile: true
-	    },
+	less: {
 	    bootstrap: {
 		files: {
 		    'tmp/bootstrap.css': ['styles/bootstrap-custom.less']
@@ -154,7 +151,7 @@ module.exports = function(grunt) {
 
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-recess');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -166,9 +163,9 @@ module.exports = function(grunt) {
     grunt.registerTask('mktmpdir', function() {  grunt.file.mkdir('tmp');});
 
     grunt.registerTask('init', ['copy:font_awesome', 'copy:js']);
-    grunt.registerTask('stable', ['clean', 'mktmpdir', 'recess', 'concat:css',
+    grunt.registerTask('stable', ['clean', 'mktmpdir', 'less', 'concat:css',
 				  'cssmin', 'ngmin', 'concat:js', 'uglify', 'clean:tmp' ]);
-    grunt.registerTask('devel', ['clean:tmp', 'mktmpdir', 'recess']);
+    grunt.registerTask('devel', ['clean:tmp', 'mktmpdir', 'less']);
     grunt.registerTask('default', ['stable']);
 
 };
