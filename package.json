@@ -1,8 +1,8 @@
 {
-  "name": "narzac.me",
+  "name": "narzac.github.io",
   "version": "0.0.1",
   "private": true,
-  "author": "Ahmet Yeşil <ayesil@freeconsole.org> (http://narzac.me)",
+  "author": "Ahmet Yeşil <ayesil@freeconsole.org> (http://narzac.github.io)",
   "description": "Personal Web Site of Ahmet Yeşil",
   "dependencies": {},
   "devDependencies": {

@@ -1,26 +1,26 @@
 {
-    "name": "narzac.me",
-    "version": "0.0.0",
+    "name": "narzac.github.io",
+    "version": "0.0.1",
     "authors": [
-	"narzac <ahmet@freeconsole.org>"
+        "narzac <ayesil@freeconsole.org>"
     ],
-    "description": "The code that powers narzac.me",
+    "description": "The code that powers narzac.github.io",
     "license": "private",
-    "homepage": "http://narzac.me",
+    "homepage": "http://narzac.github.io",
     "private": true,
     "ignore": [
-	"**/.*",
-	"node_modules",
-	"bower_modules",
-	"test",
-	"tests"
+        "**/.*",
+        "node_modules",
+        "bower_modules",
+        "test",
+        "tests"
     ],
     "dependencies": {
-	"bootstrap": " >= 3.0.2",
-	"jquery": " >= 2.0.3",
-	"angular": " >= 1.2.1",
-	"angular-bootstrap": " >= 0.6.0",
-	"font-awesome": " >= 4.0.3"
+        "bootstrap": " >= 3.0.2",
+        "jquery": " >= 2.0.3",
+        "angular": " >= 1.2.1",
+        "angular-bootstrap": " >= 0.6.0",
+        "font-awesome": " >= 4.0.3"
     },
     "devDependencies": {
     }

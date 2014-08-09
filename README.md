@@ -1,4 +1,4 @@
-# narzac.me #
+# narzac.github.io #
 
 Personal website of Ahmet Yeşil
 
@@ -52,7 +52,7 @@ Personal website of Ahmet Yeşil
 ## License
 
 [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)
-(c) [Ahmet Yeşil](http://narzac.me)
+(c) [Ahmet Yeşil](http://narzac.github.io)
 
 ## Future Plans ##
 
