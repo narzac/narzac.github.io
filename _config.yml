@@ -7,7 +7,7 @@ safe: true # Plugins are not allowed, since can not be used with github.io anywa
 lsi: false # Disabled by github.io
 relative-permalinks: false
 permalink: /:categories/:title.html
-
+highlighter: pygments
 # Jekyll specific to _config.yml ( release/stable site)
 destination: ./_site
 exclude: [node_modules, bower_modules, scripts, styles, tmp]
