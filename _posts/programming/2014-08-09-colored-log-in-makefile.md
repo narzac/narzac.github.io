@@ -43,6 +43,10 @@ define log-info
     $(call log-colored,$(BLUE),$1)
 endef
 
+define log-target
+    $(call log-colored,$(MAGENTA),$1)
+endef
+
 usage:
     $(call log-target, 'To see available targets:\n')
     $(call log-info, '    $$ make<space><tab><tab>\n')
