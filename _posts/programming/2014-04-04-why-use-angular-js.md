@@ -6,7 +6,6 @@ unique_id: 2_en
 date: 2014-04-04 12:24
 title:  "Why use AngularJS?"
 tags: AngularJS
-current: ps-nav-post
 ---
 
 AngularJS is a well thought framework and have unique design decisions in its very core. In this post I will point out some aspects I find  worth noting. I will not get into the discussion of choosing one client side MVC framework over another,  beware this is about AngularJS only.

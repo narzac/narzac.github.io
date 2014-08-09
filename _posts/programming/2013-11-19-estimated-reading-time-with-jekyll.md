@@ -6,7 +6,6 @@ unique_id: 1_en
 date: 2013-11-19 22:24
 title:  "Estimated Reading Time with Jekyll &amp; Liquid"
 tags: jekyll liquid
-current: ps-nav-post
 ---
 
 Long story short, I have decided to keep a blog and have wanted to inform the potential readers on how much time It will take to read a particular post.
