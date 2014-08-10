@@ -9,7 +9,7 @@ tags: jekyll liquid
 ---
 
 Long story short, I have decided to keep a blog and have wanted to inform the potential readers on how much time It will take to read a particular post.
- Since I use jekyll & github to manage my static web site, i've wanted to solve the problems i stumbled upon, with the tools jekyll provide as much as possible.
+ Since I use jekyll & github to manage my static web site, I've wanted to solve the problems i stumbled upon, with the tools Jekyll provide as much as possible.
  After going through the [documentation](http://jekyllrb.com/docs/home/), I have seen that, liquid is a particularly powerful template engine and have googled it,
 read through the Shopify's liquid [wiki](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) and have come up with the following solution. Hope this can save you some time.
 
@@ -48,4 +48,4 @@ You should not introduce new lines or add spaces to the {% raw %} {% capture ...
 
 Then you are good to go with the above code. Even simpler if you don't have this code in a separate include file, then replace "include.caller.content" with "page.content" and you are done. So you've guessed right,
 'include.caller.content' is used to pass 'page.content' if 'caller = page', when there is a separate include file such as post-meta.html.
-That is all about this post, feel free to ask further quesitons <span class="fontelico-emo-happy"></span>
+That is all about this post, feel free to ask further questions <span class="fontelico-emo-happy"></span>
