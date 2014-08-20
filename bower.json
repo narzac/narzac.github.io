@@ -1,12 +1,12 @@
 {
-    "name": "narzac.github.io",
+    "name": "ahmetyeshil.com",
     "version": "0.0.1",
     "authors": [
         "narzac <ayesil@freeconsole.org>"
     ],
-    "description": "The code that powers narzac.github.io",
+    "description": "The code that powers ahmetyeshil.com",
     "license": "private",
-    "homepage": "http://narzac.github.io",
+    "homepage": "http://ahmetyeshil.com",
     "private": true,
     "ignore": [
         "**/.*",

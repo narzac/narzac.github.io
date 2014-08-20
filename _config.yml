@@ -37,13 +37,13 @@ locale:
 
 # User specific configuration
 my:
-  website: 'http://narzac.github.io/'
+  website: 'http://ahmetyeshil.com/'
   name: 'Ahmet Yeşil'
-  email: 'narzac@gmail.com'
+  email: 'ayesil#freeconsole.org'
   disqus_shortname: 'narzac'
   google_analytics:
     property_id: 'UA-42936972-1'
-    site_name: 'narzac.github.io'
+    site_name: 'ahmetyeshil.com'
   twitter:
     nick: 'narzac'
   github:

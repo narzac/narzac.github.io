@@ -1,4 +1,4 @@
 # robotstxt.org/
 User-agent: *
 Disallow: /assets/*
-Sitemap: http://narzac.github.io/sitemap.xml
+Sitemap: http://ahmetyeshil.com/sitemap.xml
